@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>您是否已经满18周岁?</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+         <link rel="shortcut icon" href="favicon.ico">
+        <style>
+            .bd{
+                top:0;
+                left:0;
+                background-image: url(images/7.jpg);
+                background-size: cover;
+                padding:200px;
+            }
+            p.title{
+                font-size:24px;
+                font-weight:900;
+                color:gray;
+                line-height: 1;
+                margin-bottom: 16px;
+            }
+            .btn1{
+            display: inline-flex;
+            align-items: center;
+            height: 40px;
+            padding-right: 24px;
+            padding-left: 24px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1;
+            border-radius: 4px;
+            margin: 4px;
+            cursor: pointer;
+            }
+            .box1{
+                padding:10px;
+                margin:0 auto;
+                position: relative;
+                max-width: 512px;
+                width:auto;
+                max-height: 512px;
+                font-family: 微软雅黑;
+            }
+            .box2{
+                background-color: rgba(255, 255,255, 0.767);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: auto;
+                max-width:512px;
+                min-width: 400px;
+                padding: 10px;
+            }
+            .button1{
+                background-color: rgb(255,0,0);
+                padding:1px;
+                color:#fff;
+                border-radius:3px;
+                margin:4px;
+                cursor: pointer;
+                display: inline-flex;
+                height: 40px;
+                width:auto;
+            }
+        </style>
+        <script>
+            var w = window.innerWidth;
+            var h = window.innerHeight;
+            if(parseInt(w)>=parseInt(h)){
+            var obj = document.getElementsByClassName("bd");
+            obj.style.backgroundImage="url(images/mobile/0.jpg);";
+            }
+        </script>
+    </head>
+    <body class="bd">
+        <div class="box1">
+        <div class="box2">
+            <p class="title" style="text-align: center;">你是否已满十八岁</p>
+            <p style="color:gray; text-align: center;">法律上规定年龄满18周岁的中华人民共和国公民，定义为“成人”，你即将看到的可能不适合<b>未满18周岁的</b>人群观看，我们需要确认你的年龄</p>
+            <p style="color:gray;">The following may not be suitable for people <b>under the age of 18</b> and we need to confirm your age.</p>
+            <div style="margin: 0 auto; ">
+            <button class="btn1" onclick="btn1()">已满18岁</button>
+            <button class="btn1" onclick="btn2()">未满18岁</button>
+            </div>
+            <script>
+                function btn1() {
+                    alert("点击“确定”开始跳转...")
+                    location.href="https://fancun99.github.io/haokang/video.mp4";
+                }
+                function btn2() {
+                    window.close();
+                }
+            </script>
+        </div>
+        </div>
+    </body>
+</html>
